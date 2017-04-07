@@ -1,5 +1,5 @@
 import os
-fichier = open("/home/bastien/monfichier.txt","w")
+fichier = open("/tmp/monfichier.txt","w")
 def files_in_dir(odir) :
     res = os.listdir(odir)
     for f in res :
