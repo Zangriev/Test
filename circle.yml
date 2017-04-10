@@ -5,11 +5,11 @@ machine:
     
 test:
   post:
-    - ./project.sh
+    - ./project.py
     - cat /tmp/monfichier.txt | wc -l
     
 deployment:
   automerge:
     branch: origin
     commands:
-      - git merge dev origin
+      - git checkout origin && git merge dev && git push
