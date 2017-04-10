@@ -9,6 +9,6 @@ test:
     - cat /tmp/monfichier.txt | wc -l
     
 deployment:
-  branch: dev
+  branch: origin
     commands:
       - git checkout origin && git merge dev && git push
