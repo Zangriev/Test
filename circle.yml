@@ -5,9 +5,8 @@ machine:
     
 test:
   post:
-    commands:
-      - python project.py
-      - cat /tmp/monfichier.txt | wc -l
+    - python project.py
+    - cat /tmp/monfichier.txt | wc -l
     
 deployment:
   automerge:
