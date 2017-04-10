@@ -1,0 +1,15 @@
+
+machine:
+  python:
+    version: 2.7.12
+    
+test:
+  post:
+    - ./project.sh
+    - cat /tmp/monfichier.txt | wc -l
+    
+deployment:
+  automerge:
+    branch: origin
+    commands:
+      - git merge dev origin
