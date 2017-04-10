@@ -11,4 +11,6 @@ test:
 deployment:
   branch: origin
     commands:
-      - git checkout origin && git merge dev && git push
+      - git checkout origin
+      - git merge dev
+      - git push
