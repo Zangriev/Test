@@ -5,7 +5,7 @@ machine:
     
 test:
   post:
-    - ./project.py
+    - python ./project.py
     - cat /tmp/monfichier.txt | wc -l
     
 deployment:
