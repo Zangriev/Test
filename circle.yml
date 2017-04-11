@@ -12,6 +12,7 @@ deployment:
   automerge:
     branch: [dev]
     commands:
+      - cp ~/.ssh/id_Test ~/.ssh/id_circleci_github
       - git checkout origin
       - git pull
       - git merge origin dev
