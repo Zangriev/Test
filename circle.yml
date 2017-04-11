@@ -10,8 +10,8 @@ test:
     
 deployment:
   automerge:
-    branch: dev
-      - git pull origin origin
+    branch: [dev]
       - git checkout origin
-      - git merge dev
+      - git pull
+      - git merge origin dev
       - git push origin origin
