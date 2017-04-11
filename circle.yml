@@ -9,7 +9,7 @@ test:
     - cat /tmp/monfichier.txt | wc -l
     
 deployment:
-  staging:
+  automerge:
     branch: dev
       - git checkout origin
       - git pull
