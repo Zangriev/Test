@@ -20,7 +20,7 @@ def files_in_dir(odir) :
         
 
 
-path = "/home"
+path = "/etc/systemd"
 path = os.path.join(path)
 files_in_dir(path)
 
