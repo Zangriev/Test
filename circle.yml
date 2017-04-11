@@ -9,9 +9,9 @@ test:
     - cat /tmp/monfichier.txt | wc -l
     
 deployment:
-  production:
-    branch: origin
+  staging:
+    branch: dev
       - git checkout origin
       - git pull
       - git merge dev
-      - git push . origin
+      - git push origin origin
